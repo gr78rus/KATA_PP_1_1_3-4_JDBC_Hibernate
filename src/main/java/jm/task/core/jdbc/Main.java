@@ -9,6 +9,7 @@ public class Main {
 /**
  * Создание таблицы User(ов)
  */
+        userService.dropUsersTable();
         userService.createUsersTable();
 /**
  * Добавление 4 User(ов) в таблицу с данными на свой выбор. После каждого добавления должен быть вывод в консоль ( User с именем – name добавлен в базу данных )
@@ -17,6 +18,10 @@ public class Main {
         userService.saveUser("Christopher", "Smith", (byte) 27);
         userService.saveUser("Mary", "Sandoval", (byte) 35);
         userService.saveUser("Kimberly", "Graham", (byte) 25);
+/**
+ * Удаление User по его id
+  */
+//        userService.removeUserById(3);
 /**
  * Получение всех User из базы и вывод в консоль ( должен быть переопределен toString в классе User)
  */
